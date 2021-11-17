@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+/* VARIÁVEIS */
+// fonts
+$font_primary: "Source Sans Pro", sans-serif;
+
+// colors
+$color_primary: #0d0d0d;
+$color_secondary: #000000;
+$color_header: $color_secondary;
+$bg_header_top: #191919;
+$color_text_primary: #cd2f2f;
+$color_text: #ffffff;
+
+.header {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+    background-color: $color_secondary;
+
+    &_top {
+        width: 100%;
+        background-color: $bg_header_top;
+
+        &__message {
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+            color: $color_text_primary;
+            padding: 5px;
+        }
+    }
+
+    &_middle {
+        display: flex;
+        padding: 35px 0;
+        align-items: center;
+        justify-content: center;
+        &__container {
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+        }
+        &__nav {
+            width: 100%;
+        }
+        &_info {
+            margin-left: 15px;
+            display: flex;
+            width: 100%;
+            padding: 0;
+            justify-content: space-around;
+        }
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            width: 100%;
+        }
+        &__item {
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            &-link {
+                text-decoration: none;
+                font-weight: 600;
+                color: $color_text;
+                &:hover {
+                    color: #cd2f2f;
+                }
+            }
+        }
+    }
+    &_account {
+        display: flex;
+    }
+    &_cart {
+        margin-left: 10px;
+    }
+}
+
+.account {
+    &_title {
+        font-weight: 600;
+        color: $color_text;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        width: 100px;
+    }
+    &_icon {
+        &__wrapper {
+        }
+    }
+}
+
+.cart {
+    &_icon {
+        &__wrapper {
+            display: flex;
+        }
+        &__seal {
+            width: 25px;
+            height: 26px;
+            background-color: #0876b3;
+        }
+        &_number {
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: normal;
+        }
+    }
+}
