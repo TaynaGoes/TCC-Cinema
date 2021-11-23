@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 /* VARIÁVEIS */
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .header {
   height: auto;
   max-height: 200px;
@@ -40,7 +44,7 @@
   display: flex;
   width: 100%;
   padding: 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .header_middle__list {
   margin: 0;
@@ -50,7 +54,7 @@
   width: 100%;
 }
 .header_middle__item {
-  padding: 0 15px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -63,7 +67,9 @@
   color: #cd2f2f;
 }
 .header_account {
+  text-decoration: none;
   display: flex;
+  align-items: center;
 }
 .header_cart {
   margin-left: 10px;
@@ -93,6 +99,191 @@
   align-items: center;
   justify-content: center;
   font-style: normal;
+}
+
+.films {
+  width: 100%;
+  display: flex;
+  background-color: #0d0d0d;
+}
+.films_all {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.films_all__title {
+  font-weight: 700;
+  width: 50%;
+  padding: 20px 0;
+  font-size: 18px;
+  color: #ffff;
+  text-transform: uppercase;
+}
+.films_all__text {
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffff;
+  border: none;
+  width: 125px;
+  height: 35px;
+  justify-content: space-evenly;
+  background-color: #bf2a2a;
+  border-radius: 3px;
+  padding: 5px;
+  align-items: center;
+}
+.films_all__text-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.films_container {
+  width: 100%;
+}
+.films_list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.films_item {
+  list-style: none;
+}
+.films_image {
+  max-width: 200px;
+}
+.films_image img {
+  max-width: 200px;
+}
+.films_name {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.films_name__container {
+  padding: 5px 0 15px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.bomboniere {
+  background-color: #252424;
+  width: 100%;
+  display: flex;
+}
+.bomboniere .product_title {
+  text-align: center;
+  font-size: 24px;
+  color: #ffff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.bomboniere .product_title__showcase {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 30px 0;
+  color: #cd2f2f;
+}
+.bomboniere .product_subtitle {
+  display: flex;
+  font-size: 15px;
+  color: #ffff;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.bomboniere .product_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.bomboniere .product_item {
+  list-style: none;
+}
+.bomboniere .product_item:hover {
+  box-shadow: 0px 0px 10px #cd2f2f;
+}
+.bomboniere .product_image__wrapper {
+  width: 100%;
+}
+.bomboniere .product_image__wrapper > img {
+  width: 100%;
+}
+.bomboniere .product_infos {
+  max-height: 160px;
+  padding: 15px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bomboniere .product_name {
+  font-size: 18px;
+  color: #cd2f2f;
+}
+.bomboniere .product_description {
+  text-align: center;
+  font-size: 15px;
+}
+.bomboniere .product_price {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0876b3;
+}
+.bomboniere .product_price__buy {
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+}
+.bomboniere .product_button {
+  width: 160px;
+  display: flex;
+  height: 35px;
+  background-color: #0e7364;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+.bomboniere .product_button__link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffff;
+  text-transform: uppercase;
+}
+.bomboniere .product_button:hover {
+  background-color: #ffff;
+  border: 1px solid #0e7364;
+}
+.bomboniere .product_button:hover .product_button__link {
+  color: #0e7364;
+}
+.bomboniere .product_button:hover .product_item {
+  box-shadow: 0px 0px 20px red;
+}
+
+.footer {
+  display: flex;
+  background-color: #0d0d0d;
+  min-height: 140px;
+  height: 100%;
+  align-items: center;
+}
+.footer_wrapper {
+  text-align: center;
+}
+.footer_text {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
