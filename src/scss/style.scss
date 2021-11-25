@@ -12,7 +12,7 @@ $bg_header_top: #191919;
 $color_text_primary: #cd2f2f;
 $color_text: #ffffff;
 
-*{
+* {
     font-family: $font_primary;
 }
 
@@ -179,7 +179,6 @@ $color_text: #ffffff;
         justify-content: space-between;
     }
     &_item {
-      
         list-style: none;
     }
     &_image {
@@ -215,7 +214,7 @@ $color_text: #ffffff;
             color: #ffff;
             margin-top: 30px;
             margin-bottom: 0;
-            &__showcase{
+            &__showcase {
                 text-align: center;
                 font-weight: 500;
                 text-transform: uppercase;
@@ -238,7 +237,7 @@ $color_text: #ffffff;
         }
         &_item {
             list-style: none;
-            &:hover{
+            &:hover {
                 box-shadow: 0px 0px 10px #cd2f2f;
             }
         }
@@ -267,12 +266,12 @@ $color_text: #ffffff;
             text-align: center;
             font-size: 15px;
         }
-        &_price{
+        &_price {
             margin: 0;
             padding: 0;
             font-size: 14px;
             color: #0876b3;
-            &__buy{
+            &__buy {
                 font-weight: 600;
                 color: #000000;
                 font-size: 20px;
@@ -302,7 +301,7 @@ $color_text: #ffffff;
                     color: #0e7364;
                 }
 
-                .product_item{
+                .product_item {
                     box-shadow: 0px 0px 20px red;
                 }
             }
@@ -312,17 +311,168 @@ $color_text: #ffffff;
 // Fim dos produtos bomboniere
 
 // Footer
-.footer{
+.footer {
     display: flex;
     background-color: #0d0d0d;
     min-height: 140px;
     height: 100%;
     align-items: center;
-    &_wrapper{
+    &_wrapper {
         text-align: center;
     }
-    &_text{
+    &_text {
         color: #ffffff;
     }
 }
 // Fim Footer
+
+// Painel ADM
+.header-panel {
+    background-color: #000000;
+    padding: 20px;
+    min-height: 80px;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+    }
+}
+
+// Painel
+
+.panel {
+    &-container {
+        display: flex;
+        &_left {
+            width: 255px;
+            max-width: 20%;
+            background-color: #0d0d0d;
+        }
+        &_center {
+            display: flex;
+            width: 100%;
+            &__wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    &_left {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0;
+        }
+        &__item {
+            width: 100%;
+            list-style: none;
+            padding: 20px;
+            &-link {
+                text-decoration: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #ffffff;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+            &:hover {
+                height: 100%;
+                width: 100%;
+                background-color: #000000;
+            }
+        }
+    }
+
+    &-center {
+        &_top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        &_title {
+            color: #000000;
+            font-weight: 600;
+        }
+        &_form {
+            .film {
+                &_form {
+                    max-width: 630px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &_label {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #404040;
+                }
+                &_input {
+                    height: 50px;
+                    border-radius: 3px;
+                    border: 1px solid #d9d9d9;
+                    text-indent: 10px;
+                    outline: none;
+                    color: #0d0d0d;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    &__checkbox {
+                    }
+                }
+                &_textarea {
+                    height: 100px;
+                }
+                &_select,
+                &_timer {
+                    color: #404040;
+                    font-size: 20px;
+                    padding: 0 5px;
+                    width: 220px;
+                }
+
+                &_radio {
+                    max-width: 110px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-active{
+                        width: 60px;
+                    }
+                }
+                &_feature {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    &-button {
+        font-weight: 600;
+        width: 125px;
+        height: 45px;
+        border-radius: 3px;
+        border: none;
+        &_cancel {
+            color: red;
+            border: 1px solid red;
+            background-color: #ffffff;
+        }
+        &_confirm {
+            background-color: #0876b3;
+            color: #ffffff;
+            border: 1px solid #0876b3;
+        }
+    }
+}
+// Fim Painel ADM
