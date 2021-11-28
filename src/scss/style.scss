@@ -317,6 +317,14 @@ $color_text: #ffffff;
     min-height: 140px;
     height: 100%;
     align-items: center;
+    &_panel {
+        border-top: #d9d9d9;
+        height: 50px;
+        background-color: #ffff;
+        .footer_text {
+            color: #191919;
+        }
+    }
     &_wrapper {
         text-align: center;
     }
@@ -343,7 +351,6 @@ $color_text: #ffffff;
 }
 
 // Painel
-
 .panel {
     &-container {
         display: flex;
@@ -396,7 +403,7 @@ $color_text: #ffffff;
             width: 100%;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 20px 0;
         }
         &_title {
             color: #000000;
@@ -406,7 +413,6 @@ $color_text: #ffffff;
             .film {
                 &_form {
                     max-width: 630px;
-                    padding: 20px;
                     display: flex;
                     flex-direction: column;
                 }
@@ -414,6 +420,19 @@ $color_text: #ffffff;
                     font-size: 18px;
                     font-weight: 600;
                     color: #404040;
+                    &__file {
+                        width: 220px;
+                        height: 90px;
+                        border: 1px solid #d9d9d9;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        > img {
+                            width: 32px;
+                        }
+                    }
                 }
                 &_input {
                     height: 50px;
@@ -443,7 +462,7 @@ $color_text: #ffffff;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    &-active{
+                    &-active {
                         width: 60px;
                     }
                 }
@@ -452,6 +471,9 @@ $color_text: #ffffff;
                     flex-direction: column;
                     align-items: stretch;
                     justify-content: center;
+                    input[type="file"] {
+                        display: none;
+                    }
                 }
             }
         }
@@ -473,6 +495,94 @@ $color_text: #ffffff;
             color: #ffffff;
             border: 1px solid #0876b3;
         }
+        &_view{
+            background-color: #ffff;
+            border: 1px solid #00a000;
+            &__text{
+                color: #00a000;
+                text-decoration: none;
+            }
+        }
+        &_register{
+            height: 45px;
+            width: 180px;
+            background-color: #0876b3;
+            >.button{
+                padding: 5px;
+                color: #ffffff;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
     }
 }
-// Fim Painel ADM
+
+// view
+.table {
+    &_view {
+        padding: 30px;
+    }
+
+    &_button {
+        text-decoration: none;
+        border-radius: 3px;
+        width: 115px;
+        height: 40px;
+        background-color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__update {
+            color: #0876b3;
+            border: 1px solid #0876b3;
+            &:hover {
+                background-color: #0876b3;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+
+        &__delete {
+            color: #bf2a2a;
+            border: 1px solid #bf2a2a;
+            &:hover {
+                background-color: #bf2a2a;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+
+        &__icon {
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            > img {
+                height: 13px;
+                width: 13px;
+            }
+        }
+        &__container {
+            border-style: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            padding: 0.5rem 0 !important;
+        }
+    }
+
+    &_row {
+        border-bottom: 2px solid #e9ecef !important;
+        &__container {
+            padding-top: 13px !important;
+            height: 45px;
+            align-items: center;
+            background-color: #bf2a2a;
+        }
+        &:hover {
+            background-color: #e9ecef;
+        }
+    }
+}

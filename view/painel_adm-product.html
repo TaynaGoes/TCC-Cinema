@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <main class="panel_main">
+        <!-- Header Painel -->
+        <section class="header-panel">
+            <div class="header-panel_container">
+                <a href="../view/index.html" class="header-panel_logo">
+                    <img src="../src/imagens/logo.png" alt="" class="logo">
+                </a>
+
+                <div class="header-panel_account">
+                    <a href="#" class="header_account">
+                        <div class="account_icon__wrapper">
+                            <i class="account_icon">
+                                <?xml version="1.0" ?><svg data-name="Layer 1" width="25px" id="Layer_1"
+                                    viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                                stroke: #ffff;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                                stroke-width: 2px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title />
+                                    <path class="cls-1"
+                                        d="M38.3,24.44C38.3,27.92,35.48,34,32,34s-6.3-6.07-6.3-9.55a6.3,6.3,0,0,1,12.59,0Z" />
+                                    <path class="cls-1" d="M19,51.7a13,13,0,0,1,26,0" />
+                                    <circle class="cls-1" cx="32" cy="32" r="24" />
+                                </svg>
+                            </i>
+                        </div>
+                        <span class="account_title">
+                            Minha Conta
+                        </span>
+
+                        <?xml version="1.0" ?>
+                        <!DOCTYPE svg
+                            PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                        <svg enable-background="new 0 0 32 32" height="20px" width="20px" id="Слой_1" version="1.1"
+                            viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path clip-rule="evenodd"
+                                d="M27,11.106c0-0.564-0.489-1.01-1.044-0.995  H6.013c-0.887-0.024-1.38,1.07-0.742,1.702l9.999,9.9c0.394,0.39,1.031,0.376,1.429,0l9.991-9.892C26.879,11.64,27,11.388,27,11.106  z M15.984,19.591L8.418,12.1H23.55L15.984,19.591z"
+                                fill="#ffff" fill-rule="evenodd" id="Arrow_Drop_Down" />
+                            <g />
+                            <g />
+                            <g />
+                            <g />
+                            <g />
+                            <g />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Fim Header Painel -->
+
+        <section class="panel-container">
+            <div class="panel-container_left">
+                <ul class="panel_left__list">
+                    <li class="panel_left__item">
+                        <a href="../view/painel_adm-product.html" class="panel_left__item-link">Produtos</a>
+                    </li>
+                    <li class="panel_left__item">
+                        <a href="../view/painel_adm-film.html" class="panel_left__item-link">Filmes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-container_center">
+                <div class="container">
+                    <div class="row">
+                        <div class="panel-container_center__wrapper">
+                            <div class="panel-center_top">
+                                <h3 class="panel-center_title">Novo Produto</h3>
+                                <div class="panel-button_wrapper">
+                                    <button class="panel-button panel-button_cancel">Cancelar</button>
+                                    <button class="panel-button panel-button_confirm">Salvar</button>
+                                    <button class="panel-button panel-button_view">
+                                        <a href="../view/painel_adm__view-product.html" class="panel-button_view__text">Visualizar</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="panel-center_form">
+                                <form action="" method="post" class="film_form">
+                                    <!-- Nome -->
+                                    <label for="filme_nome" class="film_label">Nome</label>
+                                    <input type="text" name="filme_nome" id="filme_nome" class="film_input">
+
+
+                                    <!-- Categoria -->
+                                    <label for="filme_categoria" class="film_label">Categoria</label>
+                                    <select name="filme_categoria" class="film_input film_select">
+                                        <option value="" selected>-- Escolha --</option>
+                                        <option value="bebida">Bebida</option>
+                                        <option value="pipoca">Pipoca</option>
+                                        <option value="doce">Doces</option>
+                                        <option value="combos">Combos</option>
+                                    </select>
+
+                                    <!-- Descrição -->
+                                    <label for="filme_sinopse" class="film_label">Descrição</label>
+                                    <textarea name="filme_sinopse" id="filme_sinopse" cols="30" rows="3"
+                                        class="film_input film_textarea"></textarea>
+
+                                    <!-- Valor -->
+                                    <label for="filme_duracao" class="film_label">Valor</label>
+                                    <input type="number" min="0.00" max="10000.00" step="0.01" name="filme_duracao"
+                                        id="filme_duracao" class="film_input film_timer">
+
+                                    <!-- Caracteristicas -->
+                                    <div class="film_feature">
+
+                                        <span class="film_label">Imagem</span>
+                                        <label for="filme_image" class="film_label film_label__file">
+                                            Adicionar Imagem
+                                            <img src="../src/imagens/icon/upload.png" alt="" srcset="">
+                                        </label>
+                                        <input type="file" name="filme_image" id="filme_image">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer footer_panel">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_wrapper">
+                        <span class="footer_text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, placeat dolorum rerum
+                            expedita error ex vero ipsa perferendis repellat unde consequuntur cupiditate qui omnis
+                            maiores aut consectetur beatae in magnam.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Fim Footer -->
+    </main>
+</body>
+
+</html>
