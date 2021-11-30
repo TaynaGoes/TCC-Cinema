@@ -586,3 +586,102 @@ $color_text: #ffffff;
         }
     }
 }
+
+//cadastro registro
+.register{
+    background-color: #252424;
+    min-height: 425px;
+    &_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252424;
+    }
+    &_form{
+        min-width: 380px;
+        margin: 10px;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #cd2f2f;
+        padding: 30px;
+        flex-direction: column;
+        background-color: #ffff;
+    }
+    &_title{
+        text-align: center;
+        color:#bf2a2a;
+        font-weight: 800;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin: 10px 0;
+  }
+  
+  .label-float input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 100%;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+  }
+  
+  .label-float input:focus{
+    border-bottom: 2px solid #3951b2;
+  }
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+  
+  .label-float input:required:invalid + label{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+  }
+  .label-float input:focus:required:invalid{
+    border-bottom:  1px solid #3951b2;
+  }
+  .label-float input:required:invalid + label:before{
+    content: '*';
+  }
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #3951b2;
+  }
+
+.label_button{
+    margin-top: 5px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3951b2;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: #ffffff;
+        color: #3951b2;
+        border: 1px solid #3951b2;
+    }
+}
