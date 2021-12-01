@@ -46,7 +46,7 @@
                             </div>
 
                             <input type="submit" class="label_button" value="ENVIAR">         
-                            <a href="cadastro_administrador.php" class="label_button">CADASTRAR</a>              
+                            <a href="cadastro_administrador.php" class="button__cadastro">Faça aqui o seu cadastro!</a>              
                         </form>
                     </div>
 

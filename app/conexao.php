@@ -1,8 +1,8 @@
 <?php
 
-    $_dns = "mysql:host=localhost;dbname=cinema";
+    $_dns = "mysql:host=localhost;dbname=cinema_atualizado";
     $_usuario = "root";
-    $_senha = "dwHandle";
+    $_senha = "";
 
     $conexao;
 

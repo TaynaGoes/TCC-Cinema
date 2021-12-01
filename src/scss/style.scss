@@ -132,6 +132,7 @@ $color_text: #ffffff;
 
 // Filmes em Cartaz
 .films {
+    min-height: 420px;
     width: 100%;
     display: flex;
     background-color: #0d0d0d;
@@ -318,7 +319,7 @@ $color_text: #ffffff;
     height: 100%;
     align-items: center;
     &_panel {
-        border-top: #d9d9d9;
+        border-top: 1px solid #d9d9d9;
         height: 50px;
         background-color: #ffff;
         .footer_text {
@@ -353,6 +354,7 @@ $color_text: #ffffff;
 // Painel
 .panel {
     &-container {
+        min-height: 500px;
         display: flex;
         &_left {
             width: 255px;
@@ -480,15 +482,35 @@ $color_text: #ffffff;
     }
 
     &-button {
+    
         font-weight: 600;
         width: 125px;
         height: 45px;
         border-radius: 3px;
         border: none;
-        &_cancel {
+        &_wrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        &_container{
+            text-decoration: none;
+            display: flex;
             color: red;
             border: 1px solid red;
+            border-radius: 3px;
             background-color: #ffffff;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        &_cancel {
+            text-decoration: none;
+            display: flex;
+            color: red;
+            background-color: #ffffff;
+            align-items: center;
+            justify-content: center;
         }
         &_confirm {
             background-color: #0876b3;
@@ -684,4 +706,7 @@ $color_text: #ffffff;
         color: #3951b2;
         border: 1px solid #3951b2;
     }
+}
+.button__cadastro{
+    text-align: center;
 }

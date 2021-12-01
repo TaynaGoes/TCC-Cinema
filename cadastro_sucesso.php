@@ -18,11 +18,14 @@
 
         <?php require_once('menu_cliente.php'); ?>
         
-        <section class="register">
+        <section class="register" style="
+            display: flex;
+            align-items: center;
+        ">
             <div class="container">
                 <div class="row">
-                    <span class="register_title"> Você cadastrou com sucesso essa bagaça.</span>
-                    <a href="index.php" class="register_title">Clique aqui para retornar.</a>
+                    <span class="register_title"> Cadastro concluído com sucesso!.</span>
+                    <a href="index.php" class="register_title">Retorne Aqui</a>
                 </div>
             </div>
         </section>

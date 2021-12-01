@@ -86,7 +86,9 @@
                                     </div>
 
                                     <div class="panel-button_wrapper">
-                                        <a href="administracao_produtos.php" class="panel-button panel-button_cancel">Cancelar</a>
+                                        <div class="panel-button_container">
+                                            <a href="administracao_produtos.php" class="panel-button panel-button_cancel">Cancelar</a>
+                                        </div>
                                         <button type="submit" class="panel-button panel-button_confirm">Salvar</button>
                                     </div>
 

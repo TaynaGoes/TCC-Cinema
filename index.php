@@ -64,7 +64,7 @@
 
                             <li class="films_item">
                                 <div class="films_image">
-                                    <img style="width: 200px; height: 281px;" src="imagens/filmes/<?=$linha['imagem'];?>" alt="">
+                                    <img style="max-width: 230px; max-height: 280px;" src="imagens/filmes/<?=$linha['imagem'];?>" alt="">
                                 </div>
                                 <div class="films_name__container">
                                     <span class="films_name"><?=$linha['nome'];?></span>
@@ -115,7 +115,7 @@
                          ?>
                                         <li class="product_item">
                                             <div class="product_image__wrapper">
-                                                <img style="width: 188px; height: 184px;"src="imagens/produtos/<?=$produto['imagem'];?>" alt="">
+                                                <img style="max-width: 230px; min-height: 280px;" src="imagens/produtos/<?=$produto['imagem'];?>" alt="">
                                             </div>
                                             <div class="product_infos">
                                                 <h4 class="product_name"><?=$produto['nome'];?></h4>
