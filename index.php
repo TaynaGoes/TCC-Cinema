@@ -91,244 +91,54 @@
         <!-- Bomboniere -->
         <section class="bomboniere">
             <div class="container">
+             
+                <?php
+                    require_once('./app/listar_categoria_produto.php');
+                    require_once('./app/listar_produtos.php');
+                        
+                    foreach ($categorias_produto as $categoria) {
+                ?>
+                            
                 <div class="row">
-                    <h3 class="product_title">Bomboniere</h3>
+                    <h3 class="product_title"><?=$categoria['nome'];?></h3>
                     <span class="product_subtitle">Todos os dias um combo com preço especial para você!</span>
                     <div class="col-12">
-                        <h5 class="product_title__showcase">Pipocas</h5>
+                        <h5 class="product_title__showcase"><?=$categoria['nome'];?></h5>
                         <ul class="product_list">
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 1]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-                            
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 2]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
 
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 3]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 4]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 5]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
+                         <?php
+                                $contador = 1;
+                                foreach ($resultado as $produto) {
+                                
+                                    if ($produto['categoria'] == $categoria['id'] && $contador <= 5) {
+                                        $contador++;
+                         ?>
+                                        <li class="product_item">
+                                            <div class="product_image__wrapper">
+                                                <img style="width: 188px; height: 184px;"src="imagens/produtos/<?=$produto['imagem'];?>" alt="">
+                                            </div>
+                                            <div class="product_infos">
+                                                <h4 class="product_name"><?=$produto['nome'];?></h4>
+                                                <span class="product_description"><?=$produto['descricao'];?></span>
+                                                <span class="product_price">R$ <span class="product_price__buy"><?=$produto['valor'];?></span></span>
+                                                <span class="product_button">
+                                                    <a href="" class="product_button__link">Adicionar</a>
+                                                </span>
+                                            </div>
+                                        </li>
+                        <?php 
+                                    }
+                                }
+                        ?>
 
                         </ul>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12">
-                        <h5 class="product_title__showcase">Bebidas</h5>
-                        <ul class="product_list">
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 1]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-                            
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 2]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 3]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 4]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 5]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <h5 class="product_title__showcase">Doces</h5>
-                        <ul class="product_list">
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 1]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-                            
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 2]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 3]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 4]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li class="product_item">
-                                <div class="product_image__wrapper">
-                                    <img src="src/imagens/produto.png" alt="">
-                                </div>
-                                <div class="product_infos">
-                                    <h4 class="product_name">[Nome Combo 5]</h4>
-                                    <span class="product_description">Pipoca grande + Refri 2L</span>
-                                    <span class="product_price">R$ <span class="product_price__buy">00,00</span></span>
-
-                                    <span class="product_button">
-                                        <a href="" class="product_button__link">Adicionar</a>
-                                    </span>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
+                <?php             
+                    } 
+                ?>
+ 
             </div>
         </section>
         <!-- Fim Bomboniere -->

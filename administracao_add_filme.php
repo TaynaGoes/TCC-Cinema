@@ -123,12 +123,9 @@
                                     </div>
 
                                     <div class="panel-button_wrapper">
-                                        <button class="panel-button panel-button_cancel">Cancelar</button>
+                                        <a href="administracao_filmes.php" class="panel-button panel-button_cancel">Cancelar</a>
                                         <button type="submit" class="panel-button panel-button_confirm">Salvar</button>
-                                        <button class="panel-button panel-button_view">
-                                            <a href="painel_adm__view-film.php"
-                                                class="panel-button_view__text">Visualizar</a>
-                                            </button>
+                     
                                     </div>
                                 </form>
                             </div>
