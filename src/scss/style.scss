@@ -12,6 +12,11 @@ $bg_header_top: #191919;
 $color_text_primary: #cd2f2f;
 $color_text: #ffffff;
 
+* {
+    font-family: $font_primary;
+}
+
+// Formatações do Header
 .header {
     height: auto;
     max-height: 200px;
@@ -54,7 +59,7 @@ $color_text: #ffffff;
             display: flex;
             width: 100%;
             padding: 0;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
         &__list {
             margin: 0;
@@ -64,7 +69,7 @@ $color_text: #ffffff;
             width: 100%;
         }
         &__item {
-            padding: 0 15px;
+            padding: 0 10px;
             display: flex;
             justify-content: space-between;
             &-link {
@@ -78,7 +83,9 @@ $color_text: #ffffff;
         }
     }
     &_account {
+        text-decoration: none;
         display: flex;
+        align-items: center;
     }
     &_cart {
         margin-left: 10px;
@@ -119,5 +126,562 @@ $color_text: #ffffff;
             justify-content: center;
             font-style: normal;
         }
+    }
+}
+// Fim formatações do Header
+
+// Filmes em Cartaz
+.films {
+    width: 100%;
+    display: flex;
+    background-color: #0d0d0d;
+    &_all {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &__title {
+            font-weight: 700;
+            width: 50%;
+            padding: 20px 0;
+            font-size: 18px;
+            color: #ffff;
+            text-transform: uppercase;
+        }
+        &__text {
+            display: flex;
+            font-weight: 700;
+            font-size: 18px;
+            color: #ffff;
+            border: none;
+            width: 125px;
+            height: 35px;
+            justify-content: space-evenly;
+            background-color: #bf2a2a;
+            border-radius: 3px;
+            padding: 5px;
+            align-items: center;
+            &-container {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+    &_container {
+        width: 100%;
+    }
+    &_list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        list-style: none;
+    }
+    &_image {
+        max-width: 200px;
+        img {
+            max-width: 200px;
+        }
+    }
+    &_name {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        &__container {
+            padding: 5px 0 15px 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+// Fim Filmes em Cartaz
+
+// Produtos Bomboniere
+.bomboniere {
+    background-color: #252424;
+    width: 100%;
+    display: flex;
+    .product {
+        &_title {
+            text-align: center;
+            font-size: 24px;
+            color: #ffff;
+            margin-top: 30px;
+            margin-bottom: 0;
+            &__showcase {
+                text-align: center;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin: 30px 0;
+                color: $color_text_primary;
+            }
+        }
+        &_subtitle {
+            display: flex;
+            font-size: 15px;
+            color: #ffff;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &_list {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+        &_item {
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 10px #cd2f2f;
+            }
+        }
+        &_image {
+            &__wrapper {
+                width: 100%;
+                > img {
+                    width: 100%;
+                }
+            }
+        }
+        &_infos {
+            max-height: 160px;
+            padding: 15px;
+            background-color: #ffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &_name {
+            font-size: 18px;
+            color: $color_text_primary;
+        }
+        &_description {
+            text-align: center;
+            font-size: 15px;
+        }
+        &_price {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color: #0876b3;
+            &__buy {
+                font-weight: 600;
+                color: #000000;
+                font-size: 20px;
+            }
+        }
+        &_button {
+            width: 160px;
+            display: flex;
+            height: 35px;
+            background-color: #0e7364;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-top: 15px;
+            &__link {
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: 600;
+                color: #ffff;
+                text-transform: uppercase;
+            }
+            &:hover {
+                background-color: #ffff;
+                border: 1px solid #0e7364;
+                .product_button__link {
+                    color: #0e7364;
+                }
+
+                .product_item {
+                    box-shadow: 0px 0px 20px red;
+                }
+            }
+        }
+    }
+}
+// Fim dos produtos bomboniere
+
+// Footer
+.footer {
+    display: flex;
+    background-color: #0d0d0d;
+    min-height: 140px;
+    height: 100%;
+    align-items: center;
+    &_panel {
+        border-top: #d9d9d9;
+        height: 50px;
+        background-color: #ffff;
+        .footer_text {
+            color: #191919;
+        }
+    }
+    &_wrapper {
+        text-align: center;
+    }
+    &_text {
+        color: #ffffff;
+    }
+}
+// Fim Footer
+
+// Painel ADM
+.header-panel {
+    background-color: #000000;
+    padding: 20px;
+    min-height: 80px;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+    }
+}
+
+// Painel
+.panel {
+    &-container {
+        display: flex;
+        &_left {
+            width: 255px;
+            max-width: 20%;
+            background-color: #0d0d0d;
+        }
+        &_center {
+            display: flex;
+            width: 100%;
+            &__wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    &_left {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0;
+        }
+        &__item {
+            width: 100%;
+            list-style: none;
+            padding: 20px;
+            &-link {
+                text-decoration: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #ffffff;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+            &:hover {
+                height: 100%;
+                width: 100%;
+                background-color: #000000;
+            }
+        }
+    }
+
+    &-center {
+        &_top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        &_title {
+            color: #000000;
+            font-weight: 600;
+        }
+        &_form {
+            .film {
+                &_form {
+                    max-width: 630px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &_label {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #404040;
+                    &__file {
+                        width: 220px;
+                        height: 90px;
+                        border: 1px solid #d9d9d9;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        > img {
+                            width: 32px;
+                        }
+                    }
+                }
+                &_input {
+                    height: 50px;
+                    border-radius: 3px;
+                    border: 1px solid #d9d9d9;
+                    text-indent: 10px;
+                    outline: none;
+                    color: #0d0d0d;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    &__checkbox {
+                    }
+                }
+                &_textarea {
+                    height: 100px;
+                }
+                &_select,
+                &_timer {
+                    color: #404040;
+                    font-size: 20px;
+                    padding: 0 5px;
+                    width: 220px;
+                }
+
+                &_radio {
+                    max-width: 110px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-active {
+                        width: 60px;
+                    }
+                }
+                &_feature {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: center;
+                    input[type="file"] {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &-button {
+        font-weight: 600;
+        width: 125px;
+        height: 45px;
+        border-radius: 3px;
+        border: none;
+        &_cancel {
+            color: red;
+            border: 1px solid red;
+            background-color: #ffffff;
+        }
+        &_confirm {
+            background-color: #0876b3;
+            color: #ffffff;
+            border: 1px solid #0876b3;
+        }
+        &_view{
+            background-color: #ffff;
+            border: 1px solid #00a000;
+            &__text{
+                color: #00a000;
+                text-decoration: none;
+            }
+        }
+        &_register{
+            height: 45px;
+            width: 180px;
+            background-color: #0876b3;
+            >.button{
+                padding: 5px;
+                color: #ffffff;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// view
+.table {
+    &_view {
+        padding: 30px;
+    }
+
+    &_button {
+        text-decoration: none;
+        border-radius: 3px;
+        width: 115px;
+        height: 40px;
+        background-color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__update {
+            color: #0876b3;
+            border: 1px solid #0876b3;
+            &:hover {
+                background-color: #0876b3;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+
+        &__delete {
+            color: #bf2a2a;
+            border: 1px solid #bf2a2a;
+            &:hover {
+                background-color: #bf2a2a;
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+
+        &__icon {
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            > img {
+                height: 13px;
+                width: 13px;
+            }
+        }
+        &__container {
+            border-style: hidden;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            padding: 0.5rem 0 !important;
+        }
+    }
+
+    &_row {
+        border-bottom: 2px solid #e9ecef !important;
+        &__container {
+            padding-top: 13px !important;
+            height: 45px;
+            align-items: center;
+            background-color: #bf2a2a;
+        }
+        &:hover {
+            background-color: #e9ecef;
+        }
+    }
+}
+
+//cadastro registro
+.register{
+    background-color: #252424;
+    min-height: 425px;
+    &_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252424;
+    }
+    &_form{
+        min-width: 380px;
+        margin: 10px;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #cd2f2f;
+        padding: 30px;
+        flex-direction: column;
+        background-color: #ffff;
+    }
+    &_title{
+        text-align: center;
+        color:#bf2a2a;
+        font-weight: 800;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin: 10px 0;
+  }
+  
+  .label-float input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 100%;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+  }
+  
+  .label-float input:focus{
+    border-bottom: 2px solid #3951b2;
+  }
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+  
+  .label-float input:required:invalid + label{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+  }
+  .label-float input:focus:required:invalid{
+    border-bottom:  1px solid #3951b2;
+  }
+  .label-float input:required:invalid + label:before{
+    content: '*';
+  }
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #3951b2;
+  }
+
+.label_button{
+    margin-top: 5px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3951b2;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: #ffffff;
+        color: #3951b2;
+        border: 1px solid #3951b2;
     }
 }
