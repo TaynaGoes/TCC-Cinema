@@ -565,7 +565,7 @@ $color_text: #ffffff;
         &__container {
             border-style: hidden;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             align-content: center;
             flex-direction: row;

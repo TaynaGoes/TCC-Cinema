@@ -494,13 +494,13 @@
   width: 13px;
 }
 .table_button__container {
-  border-style: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
-  padding: 0.5rem 0 !important;
+    border-style: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 0.5rem 0 !important;
 }
 .table_row {
   border-bottom: 2px solid #e9ecef !important;
