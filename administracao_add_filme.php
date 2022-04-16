@@ -39,7 +39,7 @@
                         <div class="panel-container_center__wrapper">
                             <div class="panel-center_top">
                                 <h3 class="panel-center_title">Novo Filme</h3>
-        
+                                <div></div>
                             </div>
                             <div class="panel-center_form">
                                 <form action="./app/cadastro_filme.php" method="post" enctype="multipart/form-data" class="film_form">
